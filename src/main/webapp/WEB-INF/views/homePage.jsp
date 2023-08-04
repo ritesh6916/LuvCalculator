@@ -1,3 +1,4 @@
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
 	<h1 align="center"> The Love calculator </h1><hr/><br />
 	
 	<div align="center">
-		<form action="process-Home" method="get">
+		<form:form action="process-Home" method="post">
 			<tr>
 				<td>
 					<label for="txt1">Enter Your name: </label> 
@@ -29,7 +30,7 @@
 					<input type="reset" value="Reset">
 				</td>
 			</tr>
-		</form>
+		</form:form>
 	</div>
 </body>
 </html>
