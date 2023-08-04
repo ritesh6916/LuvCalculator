@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>User Name: ${name}</h2>
-	<h2>User Name: ${crush}</h2>
+	<h2>User Name: ${userInfo.txtuname}</h2>
+	<h2>User Name: ${userInfo.txtcrush}</h2>
 </body>
 </html>
