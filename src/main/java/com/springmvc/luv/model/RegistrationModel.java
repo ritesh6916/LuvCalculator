@@ -4,6 +4,9 @@ public class RegistrationModel {
 	private String txtname;
 	private String txtuser;
 	private char[] txtpass;
+	private String country;
+	
+	
 	public String getTxtname() {
 		return txtname;
 	}
@@ -22,5 +25,10 @@ public class RegistrationModel {
 	public void setTxtpass(char[] txtpass) {
 		this.txtpass = txtpass;
 	}
-	 
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
 }
