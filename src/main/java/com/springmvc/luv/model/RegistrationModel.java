@@ -22,5 +22,5 @@ public class RegistrationModel {
 	public void setTxtpass(char[] txtpass) {
 		this.txtpass = txtpass;
 	}
-	
+	 
 }
