@@ -6,6 +6,7 @@ public class RegistrationModel {
 	private char[] txtpass;
 	private String country;
 	private String[] hobbies;
+	private String gender;
 	
 	
 	public String getTxtname() {
@@ -37,6 +38,12 @@ public class RegistrationModel {
 	}
 	public void setHobbies(String[] hobbies) {
 		this.hobbies = hobbies;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 	
 }
