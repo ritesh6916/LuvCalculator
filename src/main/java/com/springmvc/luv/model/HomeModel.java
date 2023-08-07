@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Scope("singleton")
 public class HomeModel {
 
-	private String txtuname="Mr X";
-	private String txtcrush="Miss Y";
+	private String txtuname;
+	private String txtcrush;
 	
 	public HomeModel() {
 		System.out.println("HomeModel being called..");		
