@@ -19,8 +19,9 @@ public class RegistrationController {
 		return "registrationPageHome";
 	}
 	@RequestMapping(path = "registration-success", method = RequestMethod.GET)
-	public String registrationSuccess()
+	public String registrationSuccess(@ModelAttribute("registrationModel") RegistrationModel registrationModel)
 	{
+		
 		return "registrationSuccess";
 	}
 }
