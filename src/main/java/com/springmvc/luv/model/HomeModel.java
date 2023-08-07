@@ -11,7 +11,7 @@ public class HomeModel {
 	private String txtcrush;
 	
 	public HomeModel() {
-		System.out.println("HomeModel being called..");		
+		//System.out.println("HomeModel being called..");		
 	}
 	public String getTxtuname() {
 		return txtuname;

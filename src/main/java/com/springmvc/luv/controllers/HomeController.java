@@ -29,8 +29,6 @@ public class HomeController {
 	{
 		model.addAttribute("name", txtuname);
 		model.addAttribute("crush", crush);
-		System.out.println("Your Name: "+ txtuname );
-		System.out.println("Crush Name: "+ crush );
 		return "homeResultPageGet";
 	}
 	
@@ -38,8 +36,6 @@ public class HomeController {
 	public String processHome(HomeModel homeModel,Model model)
 	{
 		
-		System.out.println("Your Name: "+ homeModel.getTxtuname() );
-		System.out.println("Crush Name: "+ homeModel.getTxtcrush() );
 		model.addAttribute("userInfo", homeModel);
 		return "homeResultPagePost";
 	}
