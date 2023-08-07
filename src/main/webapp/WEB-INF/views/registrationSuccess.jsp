@@ -19,7 +19,11 @@
 	User ID:  ${registrationModel.txtuser}<br>
 	Password: ${registrationModel.txtpass}<br/>
 	Country:  ${registrationModel.country}<br/>
-	Hobbies:  ${registrationModel.hobbies}
-
+	Hobbies:  
+	
+	<c:forEach var="temp" items="${registrationModel.hobbies}">
+		${temp}
+	</c:forEach>
+	
 </body>
 </html>
