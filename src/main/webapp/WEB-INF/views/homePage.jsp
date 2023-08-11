@@ -5,13 +5,27 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
+
+<script type="text/javascript">
+
+function validateUsername()
+{
+	var uname=document.getElementById("txt1").value;
+	if(uname.length > 2)
+		return true;
+	aleart("Please enter a vakid name..");
+	return false;
+}
+
+</script>
+
 </head>
 <body>
 	<h1 align="center"> The Love calculator </h1><hr/><br />
 	
 	<div align="center">
-		<form:form action="process-Home" method="post" modelAttribute="userInfo">
+		<form:form action="process-Home" method="post" modelAttribute="userInfo" onsubmit="return validateUsername()">
 			<tr>
 				<td>
 					<label for="txt1">Enter Your name: </label> 
