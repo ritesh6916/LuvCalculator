@@ -7,12 +7,22 @@
 <meta charset="ISO-8859-1">
 <title>Home</title>
 
+<style type="text/css">
+
+.error{
+	color: red;
+	text-align: left;
+	position: fixed; 
+}
+
+</style>
+
 <script type="text/javascript">
 
 function validateUsername()
 {
 	var uname=document.getElementById("txt1").value;
-	if(uname.length < 2)
+	if(uname.length < 4)
 	{
 		alert("Please enter a valid name..");
 		return false;
@@ -32,6 +42,7 @@ function validateUsername()
 				<td>
 					<label for="txt1">Enter Your name: </label> 
 					<form:input type="text" path="txtuname" id="txt1"/>
+					<form:errors path="txtuname" cssClass="error"/>
 				</td>
 			</tr><br><br>
 			<tr>

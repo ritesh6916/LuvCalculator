@@ -1,5 +1,8 @@
 package com.springmvc.luv.model;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -7,6 +10,8 @@ import org.springframework.stereotype.Component;
 @Scope("singleton")
 public class HomeModel {
 
+	@NotBlank(message = "* Your Name is invalid")
+	@Size(min = 4,max = 15,message = "* Your Name should B/W 4 to 15 characters ")
 	private String txtuname;
 	private String txtcrush;
 	
