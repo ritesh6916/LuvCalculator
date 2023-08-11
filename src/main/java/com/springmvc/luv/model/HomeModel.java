@@ -14,6 +14,7 @@ public class HomeModel {
 	@Size(min = 4,max = 15,message = "* Your Name should B/W 4 to 15 characters ")
 	private String txtuname;
 	private String txtcrush;
+	private boolean termsAndCondition;
 	
 	public HomeModel() {
 		//System.out.println("HomeModel being called..");		
@@ -30,6 +31,13 @@ public class HomeModel {
 	public void setTxtcrush(String txtcrush) {
 		this.txtcrush = txtcrush;
 	}
+	public boolean isTermsAndCondition() {
+		return termsAndCondition;
+	}
+	public void setTermsAndCondition(boolean termsAndCondition) {
+		this.termsAndCondition = termsAndCondition;
+	}
+	
 	@Override
 	public String toString() {
 		return "HomeModel [txtuname=" + txtuname + ", txtcrush=" + txtcrush + "]";
