@@ -53,10 +53,17 @@ function validateUsername()
 			</tr><br><br>
 			<tr>
 				<td>
+					<form:checkbox path="termsAndCondition" id="check"/>
+					<label>I am accepting that, this is for FUN !!</label>
+				</td>
+			</tr><br /><br/>
+			<tr>
+				<td>
 					<input type="submit" value="Calculate">
 					<input type="reset" value="Reset">
 				</td>
 			</tr>
+			
 		</form:form>
 	</div>
 </body>
