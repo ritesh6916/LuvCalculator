@@ -27,7 +27,7 @@ function validateUsername()
 	<h1 align="center"> The Love calculator </h1><hr/><br />
 	
 	<div align="center">
-		<form:form action="process-Home" method="post" modelAttribute="userInfo" onsubmit="return validateUsername()">
+		<form:form action="process-Home" method="post" modelAttribute="userInfo" >
 			<tr>
 				<td>
 					<label for="txt1">Enter Your name: </label> 
