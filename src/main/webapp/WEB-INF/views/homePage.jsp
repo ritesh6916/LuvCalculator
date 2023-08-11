@@ -12,10 +12,12 @@
 function validateUsername()
 {
 	var uname=document.getElementById("txt1").value;
-	if(uname.length > 2)
-		return true;
-	aleart("Please enter a vakid name..");
-	return false;
+	if(uname.length < 2)
+	{
+		alert("Please enter a valid name..");
+		return false;
+	}
+	return true;
 }
 
 </script>
