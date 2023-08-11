@@ -13,6 +13,7 @@
 	color: red;
 	text-align: left;
 	position: fixed; 
+	margin-left: 20px;
 }
 
 </style>
@@ -49,18 +50,21 @@ function validateUsername()
 				<td>
 					<label for="txt2">Enter Crush name: </label> 
 					<form:input type="text" path="txtcrush" id="txt2" />
+					<form:errors path="txtcrush" cssClass="error"/>
 				</td>
 			</tr><br><br>
 			<tr>
 				<td>
-					<form:checkbox path="termsAndCondition" id="check"/>
+					<form:checkbox path="termsAndConditionAccepted" id="check"/>
 					<label>I am accepting that, this is for FUN !!</label>
+					<form:errors path="termsAndConditionAccepted" cssClass="error"/>
 				</td>
 			</tr><br /><br/>
 			<tr>
 				<td>
 					<input type="submit" value="Calculate">
 					<input type="reset" value="Reset">
+					
 				</td>
 			</tr>
 			
